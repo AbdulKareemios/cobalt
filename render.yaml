@@ -13,7 +13,7 @@ services:
       - key: NODE_VERSION
         value: 18
       - key: PORT
-        value: 10000
+        value: 9000
       - key: API_URL
         value: https://cobalt-api-8er9.onrender.com
       - key: FRONTEND_URL
