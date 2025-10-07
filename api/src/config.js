@@ -1,4 +1,4 @@
-import { getVersion } from "@imput/version-info";
+import { getVersion } from "./version-info.js";
 import { loadEnvs, validateEnvs } from "./core/env.js";
 
 const version = await getVersion();
