@@ -14,3 +14,9 @@ services:
         value: 18
       - key: PORT
         value: 10000
+      - key: API_URL
+        value: https://cobalt-api-8er9.onrender.com
+      - key: FRONTEND_URL
+        value: https://cobalt-api-8er9.onrender.com
+      - key: SECRET_KEY
+        generateValue: true
