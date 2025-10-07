@@ -45,10 +45,6 @@ const fail = (res, code, context) => {
     res.status(status).json(body);
 }
 
-const PORT = process.env.PORT || 10000;
-app.listen(PORT, () => {
-  console.log(`✅ Cobalt API running on port ${PORT}`);
-});
 
 export const runAPI = async (express, app, __dirname, isPrimary = true) => {
     const startTime = new Date();
