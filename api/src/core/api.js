@@ -63,6 +63,7 @@ export const runAPI = async (express, app, __dirname, isPrimary = true) => {
             },
             git,
         });
+
     }
 
     const serverInfo = getServerInfo();
@@ -387,4 +388,11 @@ export const runAPI = async (express, app, __dirname, isPrimary = true) => {
     });
 
     setupTunnelHandler();
+
+    app._router.stack.forEach((r) => {
+  if (r.route && r.route.path) {
+    console.log(`✅ Route registered: ${r.route.path}`);
+  }
+});
+console.log(`🚀 Cobalt API started on port ${process.env.PORT || 9000}`);
 }
