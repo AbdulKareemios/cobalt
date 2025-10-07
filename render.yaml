@@ -1,0 +1,22 @@
+:::writing{id="92011", title="Render Deployment Configuration for cobalt"}
+services:
+type: web
+name: cobalt-api
+env: node
+region: oregon
+rootDir: api
+buildCommand: |
+npm install -g npm@10
+npm install
+startCommand: npm start
+plan: free
+envVars:
+key: NODE_ENV
+value: production
+key: PORT
+value: 10000
+key: NODE_VERSION
+value: 18.20.3
+key: NPM_VERSION
+value: 10.5.0
+:::
