@@ -1,4 +1,4 @@
-:::writing{id="92011", title="Render Deployment Configuration for cobalt"}
+:::writing{id="92013", title="Fixed Render.yaml for cobalt deployment"}
 services:
 type: web
 name: cobalt-api
