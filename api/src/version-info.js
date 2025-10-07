@@ -5,3 +5,15 @@ export function getVersion() {
     date: new Date().toISOString()
   };
 }
+
+export function getCommit() {
+  return "render-deploy";
+}
+
+export function getBranch() {
+  return "main";
+}
+
+export function getRemote() {
+  return "https://github.com/imputnet/cobalt";
+}
