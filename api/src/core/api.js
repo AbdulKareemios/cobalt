@@ -395,8 +395,4 @@ export const runAPI = async (express, app, __dirname, isPrimary = true) => {
   }
 });
 
-    const PORT = process.env.PORT || 10000;
-app.listen(PORT, () => {
-  console.log(`🚀 Cobalt API running on port ${PORT}`);
-});
 }
