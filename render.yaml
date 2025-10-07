@@ -3,9 +3,12 @@ services:
     name: cobalt-api
     env: node
     plan: free
+    rootDir: api
     buildCommand: npm install
-    startCommand: npm run start
+    startCommand: node src/cobalt.js
     envVars:
+      - key: NODE_ENV
+        value: production
       - key: NODE_VERSION
         value: 18
       - key: PORT
